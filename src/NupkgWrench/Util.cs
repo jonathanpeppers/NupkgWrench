@@ -69,7 +69,7 @@ namespace NupkgWrench
 
             if (!doNotAdd)
             {
-                metadata.Add(new XElement(XName.Get(name.ToLowerInvariant(), metadata.GetDefaultNamespace().NamespaceName), value));
+                metadata.Add(new XElement(XName.Get(name, metadata.GetDefaultNamespace().NamespaceName), value));
             }
         }
 
